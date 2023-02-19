@@ -10,7 +10,12 @@ agent any
 			steps{
 				sh './hello_exec'
 				}
-		}
+			}
+		stage('Deploy'){
+			steps{
+				echo 'Pipeline deployed succesfully! by Swapnil'
+				}
+			}
 
 
 }
